@@ -1,0 +1,12 @@
+<%- include("partials/header") -%>
+
+    <h1>Home</h1>
+    <p><%= homeContent %> </p>
+
+<% posts.forEach(e => { %>
+    <h1><%= e.title %></h1>
+    <p><%= e.content.slice(0,99)+"..." %> <a href="/posts/<%=e._id%>">Read More</a></p>
+<% }); %>
+
+<button class="bn" onclick="location.href='/compose'">+</button>
+<%- include("partials/footer") -%>
