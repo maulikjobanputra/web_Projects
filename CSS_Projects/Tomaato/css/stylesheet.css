@@ -1,0 +1,273 @@
+/* CSS Reset */
+
+
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Baloo Bhai 2', cursive;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+/* Utility Class */
+
+
+.primary{
+    font-size: 3rem;
+    padding: 20px 0;
+}
+
+/* HOME */
+
+
+#home{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    height: 50%;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+#home::before{
+    content: "";
+    position:absolute;
+    background: url("../bg1.jpg") no-repeat center center/cover;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: .95;
+}
+
+
+/* NavBAr */
+
+
+.navbar{
+    display: flex;
+    position: fixed;
+    top:0;
+    left:0;
+    z-index: 1;
+    align-items: center;
+    width: 100%;
+}
+
+.navbar::before{
+    content: "";
+    position: absolute;
+    background-color: black;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.3;
+}
+
+.navbar img{
+    width: 6%;
+    margin: 3px 6px;
+}
+
+.navbar ul{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.navbar li {
+    list-style: none;
+}
+
+.navbar li a{
+    text-decoration: none;
+    padding: 3px 22px;
+    font-size: 1.3rem;
+    color:white;
+    border-radius: 8px;
+}
+
+.navbar li a:hover{
+    color:black;
+    background-color: white;
+}
+#home h1{
+    margin-top: 17%;
+    font-size: 3.8rem;
+    color:white;
+    text-align: center;
+}
+#home p{
+    display: block;
+    color: white;
+    text-align: center;
+    width:60%;
+    font-size: 1.5rem;
+    margin: 3% auto;
+}
+#home .btn{
+    margin-bottom:4%;
+    padding:6px 20px;
+    background-color: brown;
+    color:white;
+    font-size: 1.5rem;
+    border:2px solid white;
+    border-radius: 10px;
+}
+#home .btn:hover{
+    background-color: white;
+    color: brown;
+    border-color: brown;
+    cursor: pointer;
+}
+
+
+/* Services */
+
+
+
+#services{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 2%;
+}
+
+
+.container{
+    display: flex;
+    flex-direction: row; 
+    align-items: center;
+    justify-content: center;
+    margin: 20px 15px;
+}
+
+
+.services{
+    border:2px solid brown;
+    margin: 2px 5px;
+    padding: 20px 30px;
+    border-radius: 28px;
+    text-align: center;
+    background-color: #f2f2f2;
+}
+
+.services img{
+    display: block;
+    height: 100px;
+    margin: auto;
+}
+
+
+/* CLIENTS */
+
+
+
+#clients{
+    display:flex;
+    position: relative;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#clients::before{
+    content:"";
+    position: absolute;
+    background: url("../bg.jpg") no-repeat center center/cover;
+    height: 100%;
+    width: 100%;
+    opacity: 0.25;
+    z-index: -1;
+}
+
+.clients{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 1%;
+    flex-wrap: wrap;
+}
+
+
+.clients img{
+    padding: 20px 55px;
+    height: 5.5rem;
+}
+
+
+/* CONTACT */
+
+
+
+#contact{
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#contact::before{
+    content: "";
+    position: absolute;
+    background: url("../contact.jpg") no-repeat center center/cover;
+    height:100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.45;
+}
+
+label{
+    display: block;
+    font-size: 1.3rem;
+}
+
+input, textarea{
+    background-color: black;
+    color:white;
+    font-family: 'Baloo Bhai 2', cursive;
+    width: 100%;
+    border-radius: 8px;
+    text-align: center;
+    padding:4px 0;
+}
+textarea::placeholder{
+    color:white;
+}
+input::placeholder{
+    color:white;
+}
+
+#contact .btn{
+    margin: 20px 20px 35px;
+    padding:6px 45px;
+    background-color: brown;
+    color:white;
+    font-size: 1.2rem;
+    border:2px solid white;
+    border-radius: 10px;
+}
+
+#contact .btn:hover{
+    background-color: white;
+    color: brown;
+    border-color: brown;
+    cursor: pointer;
+}
+
+
+/* COPYRIGHT */
+
+
+footer{
+    background-color: black;
+    color: white;
+    text-align: center;
+    height: 100px;
+    width:100%;
+}

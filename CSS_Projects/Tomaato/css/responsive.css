@@ -1,0 +1,45 @@
+
+@media only screen and (max-width: 950px){
+    
+    .container{
+        flex-wrap: wrap;
+    }  
+}
+
+
+@media only screen and (max-width: 575px){
+    
+    .navbar{
+        flex-direction: column;
+    }  
+    .navbar ul{
+        padding-left:0;
+    }
+
+    #home h1{
+        margin-top:30%;
+    }
+    .navbar li a{
+        padding: 3px 15px;
+    }
+}
+
+
+@media only screen and (max-width: 432px){
+    
+    .navbar li a{
+        padding: 3px 11px;
+        font-size: 1.1rem;
+    }
+}
+
+
+@media only screen and (max-width: 350px){
+    
+    .navbar li a{
+        padding: 3px 6px;
+    }
+    input, textarea{
+        width:98%
+    }
+}
