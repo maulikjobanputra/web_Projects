@@ -1,0 +1,17 @@
+<%- include ('../partials/header.ejs') %>
+
+<div class="centered-form">
+    <div class="centered-form__box">
+        <h1>Join</h1>
+        <p style="color:red"><%= error %></p>
+        <form action="/join" method="post">
+            <label for="username">Display name</label>
+            <input type="text" name="username" required>
+            <label for="room">Room</label>
+            <input type="text" name="room" required>
+            <button type="submit">Join</button>
+        </form>
+    </div>
+</div>
+
+<%- include ('../partials/footer.ejs') %>
